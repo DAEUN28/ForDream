@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="fa-regular-400.ttf">
+            <string>FontAwesome5Free-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--WriteVC-->
+        <scene sceneID="YjW-5i-OO3">
+            <objects>
+                <viewController storyboardIdentifier="WriteVC" id="AfL-D0-y2V" customClass="WriteVC" customModule="ForDream" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7AO-Gc-OWM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VwM-fH-sFY">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Detail Dream " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Nv3-Yb-hE9">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="706"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hb6-Mm-FAr">
+                                        <rect key="frame" x="314" y="729" width="42" height="42"/>
+                                        <fontDescription key="fontDescription" name="FontAwesome5Free-Regular" family="Font Awesome 5 Free" pointSize="30"/>
+                                        <state key="normal" title="S"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zv-PJ-wDo">
+                                        <rect key="frame" x="130" y="726" width="154" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="WritingDate"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4T-jZ-Plg">
+                                        <rect key="frame" x="58" y="729" width="42" height="42"/>
+                                        <fontDescription key="fontDescription" name="FontAwesome5Free-Regular" family="Font Awesome 5 Free" pointSize="30"/>
+                                        <state key="normal" title="S"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="9zv-PJ-wDo" secondAttribute="bottom" id="PHq-UP-mGS"/>
+                                    <constraint firstItem="9zv-PJ-wDo" firstAttribute="leading" secondItem="T4T-jZ-Plg" secondAttribute="trailing" constant="30" id="QGR-hr-6rC"/>
+                                    <constraint firstItem="hb6-Mm-FAr" firstAttribute="width" secondItem="hb6-Mm-FAr" secondAttribute="height" multiplier="1:1" id="RKy-Tm-rZ1"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nv3-Yb-hE9" secondAttribute="trailing" id="Xmg-Pn-UCB"/>
+                                    <constraint firstItem="hb6-Mm-FAr" firstAttribute="leading" secondItem="9zv-PJ-wDo" secondAttribute="trailing" constant="30" id="che-5l-Dyb"/>
+                                    <constraint firstItem="T4T-jZ-Plg" firstAttribute="centerY" secondItem="9zv-PJ-wDo" secondAttribute="centerY" id="dy0-Vf-2qA"/>
+                                    <constraint firstItem="Nv3-Yb-hE9" firstAttribute="centerX" secondItem="VwM-fH-sFY" secondAttribute="centerX" id="fGd-2E-eU7"/>
+                                    <constraint firstItem="hb6-Mm-FAr" firstAttribute="centerY" secondItem="9zv-PJ-wDo" secondAttribute="centerY" id="iBd-yn-cPv"/>
+                                    <constraint firstItem="9zv-PJ-wDo" firstAttribute="centerX" secondItem="VwM-fH-sFY" secondAttribute="centerX" id="jap-08-Lbd"/>
+                                    <constraint firstItem="Nv3-Yb-hE9" firstAttribute="leading" secondItem="VwM-fH-sFY" secondAttribute="leading" id="nlZ-va-Uv3"/>
+                                    <constraint firstItem="T4T-jZ-Plg" firstAttribute="width" secondItem="T4T-jZ-Plg" secondAttribute="height" multiplier="1:1" id="tAB-8v-Avb"/>
+                                    <constraint firstItem="Nv3-Yb-hE9" firstAttribute="bottom" secondItem="9zv-PJ-wDo" secondAttribute="top" constant="-20" id="uPG-nC-OnM"/>
+                                    <constraint firstItem="Nv3-Yb-hE9" firstAttribute="top" secondItem="VwM-fH-sFY" secondAttribute="top" id="uzV-w7-A5I"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="M7T-nB-B5b" firstAttribute="top" secondItem="VwM-fH-sFY" secondAttribute="top" id="7DO-Y4-5oD"/>
+                            <constraint firstItem="VwM-fH-sFY" firstAttribute="trailing" secondItem="M7T-nB-B5b" secondAttribute="trailing" id="CdO-VU-y36"/>
+                            <constraint firstItem="M7T-nB-B5b" firstAttribute="bottom" secondItem="VwM-fH-sFY" secondAttribute="bottom" id="Lur-ff-dW3"/>
+                            <constraint firstItem="M7T-nB-B5b" firstAttribute="leading" secondItem="VwM-fH-sFY" secondAttribute="leading" id="wkE-6f-n1s"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="M7T-nB-B5b"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="x7y-gs-qt4">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="lqg-y6-isW">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="J5b-mk-ofQ">
+                                <rect key="frame" x="20" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="메인으로"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7gW-ZZ-FWG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2822" y="1414"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Db1-Yk-TxG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wpf-ET-Mgh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Lko-Ib-sAE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="AfL-D0-y2V" kind="relationship" relationship="rootViewController" id="VDo-Zx-aKe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tGK-A7-Kth" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2006" y="1414"/>
+        </scene>
+    </scenes>
+</document>
