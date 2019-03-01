@@ -10,6 +10,9 @@ import UIKit
 
 class DreamCell: UITableViewCell {
 
+    @IBOutlet weak var deleteBtn: UIButton!
+    @IBOutlet weak var writedDateBtn: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

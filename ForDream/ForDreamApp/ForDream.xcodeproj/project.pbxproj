@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3717C46F2219759A00E12181 /* deleteSelectedDream.png in Resources */ = {isa = PBXBuildFile; fileRef = 3717C46D2219759900E12181 /* deleteSelectedDream.png */; };
+		3717C4702219759A00E12181 /* allDeleteDream.png in Resources */ = {isa = PBXBuildFile; fileRef = 3717C46E2219759A00E12181 /* allDeleteDream.png */; };
+		3717C473221A430F00E12181 /* selectCheckBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 3717C471221A430F00E12181 /* selectCheckBtn.png */; };
+		3717C474221A430F00E12181 /* selectedCheckBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 3717C472221A430F00E12181 /* selectedCheckBtn.png */; };
+		3717C476221A523C00E12181 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3717C475221A523C00E12181 /* Config.swift */; };
+		3717C478221A527700E12181 /* Dream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3717C477221A527700E12181 /* Dream.swift */; };
+		3717C4A72223BF8A00E12181 /* DreamContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3717C4A62223BF8A00E12181 /* DreamContainer.swift */; };
+		3717C4A92223E9A300E12181 /* save.png in Resources */ = {isa = PBXBuildFile; fileRef = 3717C4A82223E9A300E12181 /* save.png */; };
 		3718CBCF2215B435000E85E3 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3718CBCE2215B435000E85E3 /* DetailVC.swift */; };
 		3718CBD12215BB29000E85E3 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3718CBD02215BB29000E85E3 /* SearchVC.swift */; };
 		3718CBD32215BB4E000E85E3 /* WriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3718CBD22215BB4E000E85E3 /* WriteVC.swift */; };
@@ -30,11 +38,24 @@
 		3736B34E2217B7A900DDD158 /* checkBlackCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 3736B34D2217B7A900DDD158 /* checkBlackCircle.png */; };
 		3736B3502218775A00DDD158 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3736B34F2218775A00DDD158 /* MenuVC.swift */; };
 		3736B3522218877300DDD158 /* DreamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3736B3512218877300DDD158 /* DreamCell.swift */; };
+		3736B35A22189A8C00DDD158 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 3736B35722189A8B00DDD158 /* menu.png */; };
+		3736B35B22189A8C00DDD158 /* selectStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3736B35822189A8B00DDD158 /* selectStar.png */; };
+		3736B35C22189A8C00DDD158 /* selectedStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3736B35922189A8B00DDD158 /* selectedStar.png */; };
+		3736B35F22189BBA00DDD158 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 3736B35D22189BBA00DDD158 /* search.png */; };
+		3736B36022189BBA00DDD158 /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = 3736B35E22189BBA00DDD158 /* edit.png */; };
 		D0EF5979C5FC033D54B33D30 /* Pods_ForDream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94F8D84DAF7B4E8CCA5AED66 /* Pods_ForDream.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1535C538C0AF4376191DD798 /* Pods-ForDream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForDream.debug.xcconfig"; path = "Target Support Files/Pods-ForDream/Pods-ForDream.debug.xcconfig"; sourceTree = "<group>"; };
+		3717C46D2219759900E12181 /* deleteSelectedDream.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deleteSelectedDream.png; sourceTree = "<group>"; };
+		3717C46E2219759A00E12181 /* allDeleteDream.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = allDeleteDream.png; sourceTree = "<group>"; };
+		3717C471221A430F00E12181 /* selectCheckBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectCheckBtn.png; sourceTree = "<group>"; };
+		3717C472221A430F00E12181 /* selectedCheckBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectedCheckBtn.png; sourceTree = "<group>"; };
+		3717C475221A523C00E12181 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		3717C477221A527700E12181 /* Dream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dream.swift; sourceTree = "<group>"; };
+		3717C4A62223BF8A00E12181 /* DreamContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamContainer.swift; sourceTree = "<group>"; };
+		3717C4A82223E9A300E12181 /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save.png; sourceTree = "<group>"; };
 		3718CBCE2215B435000E85E3 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		3718CBD02215BB29000E85E3 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		3718CBD22215BB4E000E85E3 /* WriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteVC.swift; sourceTree = "<group>"; };
@@ -60,6 +81,11 @@
 		3736B34D2217B7A900DDD158 /* checkBlackCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkBlackCircle.png; sourceTree = "<group>"; };
 		3736B34F2218775A00DDD158 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		3736B3512218877300DDD158 /* DreamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamCell.swift; sourceTree = "<group>"; };
+		3736B35722189A8B00DDD158 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		3736B35822189A8B00DDD158 /* selectStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectStar.png; sourceTree = "<group>"; };
+		3736B35922189A8B00DDD158 /* selectedStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectedStar.png; sourceTree = "<group>"; };
+		3736B35D22189BBA00DDD158 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		3736B35E22189BBA00DDD158 /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit.png; sourceTree = "<group>"; };
 		506EC5817B92639E5FDC0513 /* Pods-ForDream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForDream.release.xcconfig"; path = "Target Support Files/Pods-ForDream/Pods-ForDream.release.xcconfig"; sourceTree = "<group>"; };
 		94F8D84DAF7B4E8CCA5AED66 /* Pods_ForDream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForDream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -79,7 +105,17 @@
 		3718CBCD221583C4000E85E3 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				3717C46E2219759A00E12181 /* allDeleteDream.png */,
+				3717C46D2219759900E12181 /* deleteSelectedDream.png */,
+				3736B35E22189BBA00DDD158 /* edit.png */,
+				3736B35D22189BBA00DDD158 /* search.png */,
+				3736B35722189A8B00DDD158 /* menu.png */,
+				3736B35922189A8B00DDD158 /* selectedStar.png */,
+				3736B35822189A8B00DDD158 /* selectStar.png */,
+				3717C471221A430F00E12181 /* selectCheckBtn.png */,
+				3717C472221A430F00E12181 /* selectedCheckBtn.png */,
 				3736B34D2217B7A900DDD158 /* checkBlackCircle.png */,
+				3717C4A82223E9A300E12181 /* save.png */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -201,6 +237,9 @@
 		372C14162216DDE100B7A972 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3717C475221A523C00E12181 /* Config.swift */,
+				3717C477221A527700E12181 /* Dream.swift */,
+				3717C4A62223BF8A00E12181 /* DreamContainer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -285,11 +324,21 @@
 				372C13F22216C49500B7A972 /* Menu.storyboard in Resources */,
 				372C14182216FB3E00B7A972 /* GoogleService-Info.plist in Resources */,
 				372C13DE2216A17100B7A972 /* Auth.storyboard in Resources */,
+				3717C4702219759A00E12181 /* allDeleteDream.png in Resources */,
+				3736B35F22189BBA00DDD158 /* search.png in Resources */,
+				3736B35A22189A8C00DDD158 /* menu.png in Resources */,
 				3736B34E2217B7A900DDD158 /* checkBlackCircle.png in Resources */,
+				3717C4A92223E9A300E12181 /* save.png in Resources */,
 				3723BAB1221460260010E753 /* LaunchScreen.storyboard in Resources */,
+				3717C46F2219759A00E12181 /* deleteSelectedDream.png in Resources */,
 				372C13E72216A29A00B7A972 /* Write.storyboard in Resources */,
+				3717C474221A430F00E12181 /* selectedCheckBtn.png in Resources */,
 				3723BAAE221460260010E753 /* Assets.xcassets in Resources */,
+				3717C473221A430F00E12181 /* selectCheckBtn.png in Resources */,
+				3736B35C22189A8C00DDD158 /* selectedStar.png in Resources */,
 				372C141E221726B100B7A972 /* RemoteConfigDefaults.plist in Resources */,
+				3736B36022189BBA00DDD158 /* edit.png in Resources */,
+				3736B35B22189A8C00DDD158 /* selectStar.png in Resources */,
 				3723BAAC221460240010E753 /* Main.storyboard in Resources */,
 				372C13E52216A27600B7A972 /* Search.storyboard in Resources */,
 			);
@@ -332,6 +381,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyPickerPopover/SwiftyPickerPopover.framework",
 				"${BUILT_PRODUCTS_DIR}/UIColor_Hex_Swift/UIColor_Hex_Swift.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -343,6 +393,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyPickerPopover.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIColor_Hex_Swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -362,12 +413,15 @@
 				372C141C2217187D00B7A972 /* Base.swift in Sources */,
 				3718CBD12215BB29000E85E3 /* SearchVC.swift in Sources */,
 				3736B3522218877300DDD158 /* DreamCell.swift in Sources */,
+				3717C476221A523C00E12181 /* Config.swift in Sources */,
 				3718CBCF2215B435000E85E3 /* DetailVC.swift in Sources */,
 				372C141A2217134200B7A972 /* ConfigVC.swift in Sources */,
 				3718CBD32215BB4E000E85E3 /* WriteVC.swift in Sources */,
 				3736B3502218775A00DDD158 /* MenuVC.swift in Sources */,
+				3717C478221A527700E12181 /* Dream.swift in Sources */,
 				3723BADB221561070010E753 /* JoinVC.swift in Sources */,
 				372C13F72216C7BD00B7A972 /* StarStorageTVC.swift in Sources */,
+				3717C4A72223BF8A00E12181 /* DreamContainer.swift in Sources */,
 				3723BAA9221460240010E753 /* MainVC.swift in Sources */,
 				372C13F02216B71700B7A972 /* MenuCell.swift in Sources */,
 				3723BAA7221460240010E753 /* AppDelegate.swift in Sources */,

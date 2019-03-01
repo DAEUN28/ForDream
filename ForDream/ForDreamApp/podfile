@@ -11,4 +11,5 @@ target 'ForDream' do
   pod 'Firebase/RemoteConfig'
   pod 'Firebase/Database'
   pod 'UIColor_Hex_Swift', '~> 4.2.0'
+  pod 'SwiftyPickerPopover'
 end

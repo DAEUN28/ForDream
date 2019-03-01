@@ -18,9 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ForDream" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnk-LH-kkC">
-                                <rect key="frame" x="122.5" y="311" width="169" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ForDream" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnk-LH-kkC">
+                                <rect key="frame" x="122.5" y="325" width="169" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -70,11 +69,13 @@
                             <constraint firstItem="JVV-wS-rO0" firstAttribute="leading" secondItem="14e-hR-tbA" secondAttribute="leading" id="A5p-Dv-5i2"/>
                             <constraint firstItem="14e-hR-tbA" firstAttribute="centerX" secondItem="c31-HY-hpb" secondAttribute="centerX" id="CTm-W5-bSw"/>
                             <constraint firstItem="JVV-wS-rO0" firstAttribute="top" secondItem="14e-hR-tbA" secondAttribute="bottom" constant="5" id="EZd-U6-6lI"/>
+                            <constraint firstItem="X2P-bI-jFY" firstAttribute="top" secondItem="hnk-LH-kkC" secondAttribute="bottom" constant="50" id="HFk-Mc-rqL"/>
                             <constraint firstItem="14e-hR-tbA" firstAttribute="top" secondItem="X2P-bI-jFY" secondAttribute="bottom" constant="20" id="TF8-Y2-byV"/>
                             <constraint firstItem="X2P-bI-jFY" firstAttribute="centerX" secondItem="c31-HY-hpb" secondAttribute="centerX" id="WhC-Cc-R8o"/>
                             <constraint firstItem="uh1-Nd-DWL" firstAttribute="centerX" secondItem="14e-hR-tbA" secondAttribute="centerX" id="cno-fT-KhZ"/>
                             <constraint firstItem="X2P-bI-jFY" firstAttribute="bottom" secondItem="c31-HY-hpb" secondAttribute="centerY" id="mVp-Jg-qpu"/>
                             <constraint firstItem="X2P-bI-jFY" firstAttribute="width" secondItem="X2P-bI-jFY" secondAttribute="height" multiplier="300:30" id="nsM-Dj-8ge"/>
+                            <constraint firstItem="X2P-bI-jFY" firstAttribute="centerX" secondItem="hnk-LH-kkC" secondAttribute="centerX" id="wiB-Ly-Fs9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="c31-HY-hpb"/>
                     </view>
@@ -173,7 +174,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.6331112981" green="0.97864800689999998" blue="0.30174076560000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.63137254901960782" green="0.98039215686274506" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="9H2-Qh-qP3" firstAttribute="top" secondItem="Kcl-7e-1bO" secondAttribute="bottom" constant="10" id="1cB-yL-YTO"/>
                             <constraint firstItem="UVp-SH-kSX" firstAttribute="top" secondItem="9H2-Qh-qP3" secondAttribute="bottom" constant="20" id="8Hp-uX-rE7"/>

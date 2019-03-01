@@ -80,42 +80,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJ8-iC-iBM">
-                                <rect key="frame" x="355" y="44" width="59" height="59"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJ8-iC-iBM">
+                                <rect key="frame" x="364" y="44" width="40" height="40"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="kGf-Gj-gRY"/>
                                     <constraint firstAttribute="width" secondItem="VJ8-iC-iBM" secondAttribute="height" multiplier="1:1" id="nuf-YR-NhL"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="FontAwesome5Free-Regular" family="Font Awesome 5 Free" pointSize="40"/>
-                                <state key="normal" title="M">
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="M" image="menu.png">
                                     <color key="titleColor" red="0.6331112981" green="0.97864800689999998" blue="0.30174076560000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="showMenuBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gui-cF-48f"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tLU-We-aGf">
-                                <rect key="frame" x="0.0" y="103" width="414" height="680"/>
+                                <rect key="frame" x="0.0" y="84" width="414" height="718"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="92" id="uhS-Jr-LjH">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="dreamCell" rowHeight="92" id="uhS-Jr-LjH" customClass="DreamCell" customModule="ForDream" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="92"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uhS-Jr-LjH" id="p7h-r4-KsX">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="91.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hej-Jc-ZbH">
-                                                    <rect key="frame" x="20" y="30" width="32" height="32"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hej-Jc-ZbH">
+                                                    <rect key="frame" x="10" y="23" width="46" height="46"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="hej-Jc-ZbH" secondAttribute="height" multiplier="1:1" id="EVI-fw-GjM"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="FontAwesome5Free-Regular" family="Font Awesome 5 Free" pointSize="17"/>
-                                                    <state key="normal" title="C">
-                                                        <color key="titleColor" red="0.6331112981" green="0.97864800689999998" blue="0.30174076560000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <state key="normal" title="C" image="selectCheckBtn.png">
+                                                        <color key="titleColor" red="0.63137254901960782" green="0.98039215686274506" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </state>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieo-Lq-5jt">
-                                                    <rect key="frame" x="72" y="0.0" width="342" height="91.5"/>
+                                                    <rect key="frame" x="257" y="0.0" width="147" height="92"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                     <state key="normal" title="WritedDate">
-                                                        <color key="titleColor" red="0.6331112981" green="0.97864800689999998" blue="0.30174076560000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="titleColor" red="0.63137254901960782" green="0.98039215686274506" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </state>
                                                     <connections>
                                                         <segue destination="zcj-68-eFF" kind="presentation" id="MZd-Kc-EPK"/>
@@ -123,67 +126,88 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="ieo-Lq-5jt" firstAttribute="top" secondItem="p7h-r4-KsX" secondAttribute="top" id="EIJ-nv-r5O"/>
-                                                <constraint firstAttribute="trailing" secondItem="ieo-Lq-5jt" secondAttribute="trailing" id="KG2-kx-B5M"/>
-                                                <constraint firstItem="hej-Jc-ZbH" firstAttribute="centerY" secondItem="p7h-r4-KsX" secondAttribute="centerY" id="Rus-uz-jXn"/>
-                                                <constraint firstItem="ieo-Lq-5jt" firstAttribute="leading" secondItem="hej-Jc-ZbH" secondAttribute="trailing" constant="20" id="VR7-x3-dgT"/>
-                                                <constraint firstItem="hej-Jc-ZbH" firstAttribute="leading" secondItem="p7h-r4-KsX" secondAttribute="leading" constant="20" id="Vpq-X2-adU"/>
-                                                <constraint firstAttribute="bottom" secondItem="ieo-Lq-5jt" secondAttribute="bottom" id="YAa-AQ-bUd"/>
+                                                <constraint firstItem="ieo-Lq-5jt" firstAttribute="centerY" secondItem="hej-Jc-ZbH" secondAttribute="centerY" id="DAE-5N-A2G"/>
+                                                <constraint firstItem="ieo-Lq-5jt" firstAttribute="trailing" secondItem="p7h-r4-KsX" secondAttribute="trailing" constant="-10" id="KG2-kx-B5M"/>
+                                                <constraint firstItem="hej-Jc-ZbH" firstAttribute="width" secondItem="ieo-Lq-5jt" secondAttribute="height" multiplier="1:2" id="WZw-RV-n7m"/>
+                                                <constraint firstItem="ieo-Lq-5jt" firstAttribute="top" secondItem="p7h-r4-KsX" secondAttribute="top" id="y4h-mO-SCN"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstItem="hej-Jc-ZbH" firstAttribute="leading" secondItem="uhS-Jr-LjH" secondAttribute="leading" constant="10" id="FgU-cU-ty6"/>
+                                            <constraint firstItem="hej-Jc-ZbH" firstAttribute="centerY" secondItem="uhS-Jr-LjH" secondAttribute="centerY" id="j5u-uX-RYE"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="deleteBtn" destination="hej-Jc-ZbH" id="h9A-m8-Wbz"/>
+                                            <outlet property="writedDateBtn" destination="ieo-Lq-5jt" id="qHr-gm-9M8"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="lbM-ZG-682"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="5OC-vj-9Tf"/>
+                                </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DOk-Fq-QQO">
-                                <rect key="frame" x="0.0" y="783" width="414" height="79"/>
+                                <rect key="frame" x="0.0" y="802" width="414" height="60"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGw-fI-iTx">
-                                        <rect key="frame" x="20" y="10" width="59" height="59"/>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGw-fI-iTx">
+                                        <rect key="frame" x="20" y="10" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="bGw-fI-iTx" secondAttribute="height" multiplier="1:1" id="FMY-kM-Edm"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="FontAwesome5Free-Regular" family="Font Awesome 5 Free" pointSize="40"/>
-                                        <state key="normal" title="AR">
+                                        <state key="normal" title="AR" image="allDeleteDream.png">
                                             <color key="titleColor" red="0.6331112981" green="0.97864800689999998" blue="0.30174076560000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="allDeleteBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iKb-d2-Yo9"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mpY-Yo-P8N">
-                                        <rect key="frame" x="246" y="10" width="59" height="59"/>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mpY-Yo-P8N">
+                                        <rect key="frame" x="284" y="10" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="mpY-Yo-P8N" secondAttribute="height" multiplier="1:1" id="1gv-eU-KrS"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="FontAwesome5Free-Regular" family="Font Awesome 5 Free" pointSize="40"/>
-                                        <state key="normal" title="S">
+                                        <state key="normal" title="S" image="search.png">
                                             <color key="titleColor" red="0.6331112981" green="0.97864800689999998" blue="0.30174076560000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="moveToSearchBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mMv-6I-HLT"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHG-gO-NVK">
-                                        <rect key="frame" x="157" y="10" width="59" height="59"/>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHG-gO-NVK">
+                                        <rect key="frame" x="214" y="10" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="IHG-gO-NVK" secondAttribute="height" multiplier="1:1" id="pWP-j4-E3I"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="FontAwesome5Free-Regular" family="Font Awesome 5 Free" pointSize="40"/>
-                                        <state key="normal" title="R">
+                                        <state key="normal" title="R" image="deleteSelectedDream.png">
                                             <color key="titleColor" red="0.6331112981" green="0.97864800689999998" blue="0.30174076560000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="selectedDeleteBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Vu-uF-Mho"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XyF-1J-9BD">
-                                        <rect key="frame" x="335" y="10" width="59" height="59"/>
+                                    <button opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XyF-1J-9BD">
+                                        <rect key="frame" x="354" y="10" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="XyF-1J-9BD" secondAttribute="height" multiplier="1:1" id="JRf-1V-Ups"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="FontAwesome5Free-Regular" family="Font Awesome 5 Free" pointSize="40"/>
-                                        <state key="normal" title="W">
+                                        <state key="normal" title="W" image="edit.png">
                                             <color key="titleColor" red="0.6331112981" green="0.97864800689999998" blue="0.30174076560000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="moveToWriteBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0ay-YU-et0"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="XyF-1J-9BD" firstAttribute="leading" secondItem="mpY-Yo-P8N" secondAttribute="trailing" constant="30" id="16G-kn-cHI"/>
+                                    <constraint firstItem="IHG-gO-NVK" firstAttribute="width" secondItem="bGw-fI-iTx" secondAttribute="width" id="ARB-xq-PhB"/>
+                                    <constraint firstItem="XyF-1J-9BD" firstAttribute="width" secondItem="mpY-Yo-P8N" secondAttribute="width" id="CGy-zP-6UU"/>
                                     <constraint firstItem="bGw-fI-iTx" firstAttribute="leading" secondItem="DOk-Fq-QQO" secondAttribute="leading" constant="20" id="LXf-PA-ue0"/>
                                     <constraint firstItem="bGw-fI-iTx" firstAttribute="centerY" secondItem="IHG-gO-NVK" secondAttribute="centerY" id="Pza-7a-QEI"/>
                                     <constraint firstAttribute="trailing" secondItem="XyF-1J-9BD" secondAttribute="trailing" constant="20" id="TXF-NU-RHN"/>
+                                    <constraint firstItem="mpY-Yo-P8N" firstAttribute="width" secondItem="IHG-gO-NVK" secondAttribute="width" id="Wud-9A-UId"/>
                                     <constraint firstItem="mpY-Yo-P8N" firstAttribute="leading" secondItem="IHG-gO-NVK" secondAttribute="trailing" constant="30" id="b1g-jw-ajn"/>
                                     <constraint firstItem="XyF-1J-9BD" firstAttribute="top" secondItem="DOk-Fq-QQO" secondAttribute="top" constant="10" id="mEI-SU-d9c"/>
                                     <constraint firstAttribute="bottom" secondItem="XyF-1J-9BD" secondAttribute="bottom" constant="10" id="ntt-j2-h19"/>
@@ -205,15 +229,20 @@
                             <constraint firstItem="Ev8-T3-2VW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QGH-MD-EQK"/>
                             <constraint firstItem="VJ8-iC-iBM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Qbf-fZ-VAq"/>
                             <constraint firstItem="DOk-Fq-QQO" firstAttribute="centerX" secondItem="Ev8-T3-2VW" secondAttribute="centerX" id="Wph-6W-VEP"/>
+                            <constraint firstItem="VJ8-iC-iBM" firstAttribute="width" secondItem="XyF-1J-9BD" secondAttribute="width" id="YUS-zG-GxV"/>
                             <constraint firstItem="tLU-We-aGf" firstAttribute="top" secondItem="VJ8-iC-iBM" secondAttribute="bottom" id="Zh2-Go-8Hh"/>
                             <constraint firstItem="tLU-We-aGf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dCY-aN-qO3"/>
                             <constraint firstItem="tLU-We-aGf" firstAttribute="bottom" secondItem="DOk-Fq-QQO" secondAttribute="top" id="fgy-Or-Vbr"/>
                             <constraint firstItem="Ev8-T3-2VW" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="hUF-RS-uhq"/>
-                            <constraint firstItem="VJ8-iC-iBM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="woL-0u-fPE"/>
+                            <constraint firstItem="VJ8-iC-iBM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-10" id="woL-0u-fPE"/>
                             <constraint firstItem="DOk-Fq-QQO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="wvJ-cl-5Ez"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="forDreamLbl" destination="Ev8-T3-2VW" id="LzW-8w-LBC"/>
+                        <outlet property="mainTableView" destination="tLU-We-aGf" id="hbA-WD-OLF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <view contentMode="scaleAspectFit" id="VXV-5u-n5p">
@@ -237,6 +266,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nQw-LG-MoA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3679.7101449275365" y="20.758928571428569"/>
+        </scene>
+        <!--Write-->
+        <scene sceneID="CVh-4J-oDd">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="WriteVC" storyboardName="Write" id="OTx-Tb-EqX" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JEy-1T-1b8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3044" y="376"/>
         </scene>
         <!--DetailVC-->
         <scene sceneID="Mh6-qi-87W">
@@ -327,4 +364,12 @@
             <point key="canvasLocation" x="2368" y="21"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="allDeleteDream.png" width="480" height="480"/>
+        <image name="deleteSelectedDream.png" width="512" height="512"/>
+        <image name="edit.png" width="512" height="512"/>
+        <image name="menu.png" width="480" height="480"/>
+        <image name="search.png" width="480" height="480"/>
+        <image name="selectCheckBtn.png" width="500" height="500"/>
+    </resources>
 </document>

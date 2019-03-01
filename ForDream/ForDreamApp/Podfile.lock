@@ -81,6 +81,7 @@ PODS:
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
   - Protobuf (3.6.1)
+  - SwiftyPickerPopover (6.6.5)
   - UIColor_Hex_Swift (4.2.0)
 
 DEPENDENCIES:
@@ -88,6 +89,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - Firebase/RemoteConfig
+  - SwiftyPickerPopover
   - UIColor_Hex_Swift (~> 4.2.0)
 
 SPEC REPOS:
@@ -107,6 +109,7 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - Protobuf
+    - SwiftyPickerPopover
     - UIColor_Hex_Swift
 
 SPEC CHECKSUMS:
@@ -125,8 +128,9 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
+  SwiftyPickerPopover: f2975fd0233d04c0a8f8d52d09b6f24b882de6fb
   UIColor_Hex_Swift: bc07fc197421ee896b9ed6dcfa2054b7fbf75145
 
-PODFILE CHECKSUM: 182a54c669f3f132b4e979c7893e8c8f12769d7c
+PODFILE CHECKSUM: 8dc1725092f9033e7ab6b58c9e75d5f7577a8b42
 
 COCOAPODS: 1.6.0

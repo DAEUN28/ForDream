@@ -32,7 +32,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znj-NE-ZU0">
-                                            <rect key="frame" x="20" y="31" width="30" height="30"/>
+                                            <rect key="frame" x="20" y="30" width="32" height="32"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="znj-NE-ZU0" secondAttribute="height" multiplier="1:1" id="tMb-2e-ZhK"/>
                                             </constraints>
@@ -42,7 +42,7 @@
                                             </state>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4l-9f-ev7">
-                                            <rect key="frame" x="70" y="0.0" width="344" height="91.5"/>
+                                            <rect key="frame" x="72" y="0.0" width="342" height="91.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                             <state key="normal" title="WritedDate">
                                                 <color key="titleColor" red="0.6331112981" green="0.97864800689999998" blue="0.30174076560000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -76,6 +76,7 @@
         <!--Navigation Controller-->
         <scene sceneID="zuq-cz-mIb">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ajr-9p-Ucs" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="FcM-Hd-jr0" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GLF-eq-bsU">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -85,7 +86,6 @@
                         <segue destination="KZf-lE-VmI" kind="relationship" relationship="rootViewController" id="WMH-kK-tcB"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ajr-9p-Ucs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-905" y="-555"/>
         </scene>
@@ -105,7 +105,7 @@
                                         <segments>
                                             <segment title="검정"/>
                                             <segment title="하양"/>
-                                            <segment title="민트"/>
+                                            <segment title="연두"/>
                                         </segments>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="배경색상" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKB-rg-KrL">
@@ -134,7 +134,7 @@
                                         <segments>
                                             <segment title="검정"/>
                                             <segment title="하양"/>
-                                            <segment title="민트"/>
+                                            <segment title="연두"/>
                                         </segments>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="글자색상" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9a4-Ts-noA">

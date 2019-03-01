@@ -55,7 +55,8 @@ class JoinVC: UIViewController {
                 
                 let alert = UIAlertController(title: "회원가입 성공!", message: "로그인해주세요", preferredStyle: UIAlertController.Style.alert)
                 alert.addAction(UIAlertAction(title: "확인", style: UIAlertAction.Style.default, handler: { (alertAction) in
-                self.dismiss(animated: true, completion: nil)}))
+                    self.present(alert, animated: true, completion: nil)
+                    self.dismiss(animated: true, completion: nil)}))
                 
             } else {
                 let alert = UIAlertController(title: "오류!", message: "회원가입에 실패했어요", preferredStyle: UIAlertController.Style.alert)
