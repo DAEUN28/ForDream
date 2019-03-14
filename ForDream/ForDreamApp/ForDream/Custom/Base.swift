@@ -7,10 +7,9 @@
 //
 
 import UIKit
+import Firebase
 
-extension UIViewController {
-    
-    
+class Base {
+    let uid = Auth.auth().currentUser?.uid
+    let ref = Database.database().reference()
 }
-
-
