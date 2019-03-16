@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37112403223CCE0D0099612E /* DetailPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37112402223CCE0D0099612E /* DetailPVC.swift */; };
 		3717C46F2219759A00E12181 /* deleteSelectedDream.png in Resources */ = {isa = PBXBuildFile; fileRef = 3717C46D2219759900E12181 /* deleteSelectedDream.png */; };
 		3717C4702219759A00E12181 /* allDeleteDream.png in Resources */ = {isa = PBXBuildFile; fileRef = 3717C46E2219759A00E12181 /* allDeleteDream.png */; };
 		3717C473221A430F00E12181 /* selectCheckBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 3717C471221A430F00E12181 /* selectCheckBtn.png */; };
 		3717C474221A430F00E12181 /* selectedCheckBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 3717C472221A430F00E12181 /* selectedCheckBtn.png */; };
 		3717C476221A523C00E12181 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3717C475221A523C00E12181 /* Config.swift */; };
 		3717C478221A527700E12181 /* Dream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3717C477221A527700E12181 /* Dream.swift */; };
-		3717C4A72223BF8A00E12181 /* DreamContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3717C4A62223BF8A00E12181 /* DreamContainer.swift */; };
 		3717C4A92223E9A300E12181 /* save.png in Resources */ = {isa = PBXBuildFile; fileRef = 3717C4A82223E9A300E12181 /* save.png */; };
 		3718CBCF2215B435000E85E3 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3718CBCE2215B435000E85E3 /* DetailVC.swift */; };
 		3718CBD12215BB29000E85E3 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3718CBD02215BB29000E85E3 /* SearchVC.swift */; };
@@ -43,18 +43,19 @@
 		3736B35C22189A8C00DDD158 /* selectedStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3736B35922189A8B00DDD158 /* selectedStar.png */; };
 		3736B35F22189BBA00DDD158 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 3736B35D22189BBA00DDD158 /* search.png */; };
 		3736B36022189BBA00DDD158 /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = 3736B35E22189BBA00DDD158 /* edit.png */; };
+		37DEE9F322325B42000942D5 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DEE9F222325B42000942D5 /* Model.swift */; };
 		D0EF5979C5FC033D54B33D30 /* Pods_ForDream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94F8D84DAF7B4E8CCA5AED66 /* Pods_ForDream.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1535C538C0AF4376191DD798 /* Pods-ForDream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForDream.debug.xcconfig"; path = "Target Support Files/Pods-ForDream/Pods-ForDream.debug.xcconfig"; sourceTree = "<group>"; };
+		37112402223CCE0D0099612E /* DetailPVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPVC.swift; sourceTree = "<group>"; };
 		3717C46D2219759900E12181 /* deleteSelectedDream.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deleteSelectedDream.png; sourceTree = "<group>"; };
 		3717C46E2219759A00E12181 /* allDeleteDream.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = allDeleteDream.png; sourceTree = "<group>"; };
 		3717C471221A430F00E12181 /* selectCheckBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectCheckBtn.png; sourceTree = "<group>"; };
 		3717C472221A430F00E12181 /* selectedCheckBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectedCheckBtn.png; sourceTree = "<group>"; };
 		3717C475221A523C00E12181 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		3717C477221A527700E12181 /* Dream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dream.swift; sourceTree = "<group>"; };
-		3717C4A62223BF8A00E12181 /* DreamContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamContainer.swift; sourceTree = "<group>"; };
 		3717C4A82223E9A300E12181 /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save.png; sourceTree = "<group>"; };
 		3718CBCE2215B435000E85E3 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		3718CBD02215BB29000E85E3 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
@@ -86,6 +87,7 @@
 		3736B35922189A8B00DDD158 /* selectedStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectedStar.png; sourceTree = "<group>"; };
 		3736B35D22189BBA00DDD158 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
 		3736B35E22189BBA00DDD158 /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit.png; sourceTree = "<group>"; };
+		37DEE9F222325B42000942D5 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		506EC5817B92639E5FDC0513 /* Pods-ForDream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForDream.release.xcconfig"; path = "Target Support Files/Pods-ForDream/Pods-ForDream.release.xcconfig"; sourceTree = "<group>"; };
 		94F8D84DAF7B4E8CCA5AED66 /* Pods_ForDream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForDream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -124,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				3723BAA5221460240010E753 /* ForDream */,
-				372C13EE2216B6F000B7A972 /* Custom */,
 				3718CBCD221583C4000E85E3 /* Resource */,
 				3723BAA4221460240010E753 /* Products */,
 				5A97B932947E2E57A130E05B /* Pods */,
@@ -143,6 +144,7 @@
 		3723BAA5221460240010E753 /* ForDream */ = {
 			isa = PBXGroup;
 			children = (
+				372C13EE2216B6F000B7A972 /* Custom */,
 				3723BAD6221560850010E753 /* UI */,
 				3723BAD72215608B0010E753 /* VC */,
 				372C14162216DDE100B7A972 /* Model */,
@@ -209,8 +211,9 @@
 			isa = PBXGroup;
 			children = (
 				3723BAA8221460240010E753 /* MainVC.swift */,
-				3718CBCE2215B435000E85E3 /* DetailVC.swift */,
 				3736B34F2218775A00DDD158 /* MenuVC.swift */,
+				3718CBCE2215B435000E85E3 /* DetailVC.swift */,
+				37112402223CCE0D0099612E /* DetailPVC.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -239,7 +242,7 @@
 			children = (
 				3717C475221A523C00E12181 /* Config.swift */,
 				3717C477221A527700E12181 /* Dream.swift */,
-				3717C4A62223BF8A00E12181 /* DreamContainer.swift */,
+				37DEE9F222325B42000942D5 /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37DEE9F322325B42000942D5 /* Model.swift in Sources */,
 				372C141C2217187D00B7A972 /* Base.swift in Sources */,
 				3718CBD12215BB29000E85E3 /* SearchVC.swift in Sources */,
 				3736B3522218877300DDD158 /* DreamCell.swift in Sources */,
@@ -420,8 +424,8 @@
 				3736B3502218775A00DDD158 /* MenuVC.swift in Sources */,
 				3717C478221A527700E12181 /* Dream.swift in Sources */,
 				3723BADB221561070010E753 /* JoinVC.swift in Sources */,
+				37112403223CCE0D0099612E /* DetailPVC.swift in Sources */,
 				372C13F72216C7BD00B7A972 /* StarStorageTVC.swift in Sources */,
-				3717C4A72223BF8A00E12181 /* DreamContainer.swift in Sources */,
 				3723BAA9221460240010E753 /* MainVC.swift in Sources */,
 				372C13F02216B71700B7A972 /* MenuCell.swift in Sources */,
 				3723BAA7221460240010E753 /* AppDelegate.swift in Sources */,

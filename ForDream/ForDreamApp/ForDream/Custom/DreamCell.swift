@@ -9,13 +9,13 @@
 import UIKit
 
 class DreamCell: UITableViewCell {
-
-    @IBOutlet weak var deleteBtn: UIButton!
-    @IBOutlet weak var writedDateBtn: UIButton!
+    
+    @IBOutlet weak var writedDateLbl: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -23,5 +23,4 @@ class DreamCell: UITableViewCell {
         
         // Configure the view for the selected state
     }
-
 }

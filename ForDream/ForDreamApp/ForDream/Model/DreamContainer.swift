@@ -7,18 +7,21 @@
 //
 
 import UIKit
-import Firebase
 
-class DreamContainer {
+class DreamContainer: Codable{
     
-    static let sharedInstance = DreamContainer()
-    
-    var ref = Database.database().reference()
-    var dreamContainers = [Dream]()
-    
-    func updateDreamIdx() {
-        let uid = Auth.auth().currentUser?.uid
-        
-//        if self.dreamContainers.count != ref.child("users").child(uid).child("dream")
+    var writedDate:String
+    var dream:Dream
+
+    init() {
+        writedDate = ""
+        dream = Dream()
     }
+    
+}
+
+class DreamContainers {
+    static let sharedInstance = DreamContainers()
+    
+    var dreamContainers = [String:Dream]()
 }

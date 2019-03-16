@@ -69,9 +69,16 @@
                                             <action selector="moveToMainBtn:" destination="AfL-D0-y2V" eventType="touchUpInside" id="0wz-h5-Soh"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*수정불가*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcV-xb-3B9">
+                                        <rect key="frame" x="313" y="5" width="91" height="26"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" red="0.63137254899999995" green="0.98039215690000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="hcV-xb-3B9" firstAttribute="centerY" secondItem="d8l-8z-5tc" secondAttribute="centerY" id="10K-04-nM2"/>
                                     <constraint firstItem="9zv-PJ-wDo" firstAttribute="height" secondItem="T4T-jZ-Plg" secondAttribute="height" id="6KJ-AJ-99D"/>
                                     <constraint firstItem="T4T-jZ-Plg" firstAttribute="height" secondItem="hb6-Mm-FAr" secondAttribute="height" id="7Vk-bH-daU"/>
                                     <constraint firstItem="d8l-8z-5tc" firstAttribute="bottom" secondItem="Nv3-Yb-hE9" secondAttribute="top" constant="-10" id="GEA-2y-o1A"/>
@@ -79,6 +86,7 @@
                                     <constraint firstItem="9zv-PJ-wDo" firstAttribute="leading" secondItem="T4T-jZ-Plg" secondAttribute="trailing" constant="30" id="QGR-hr-6rC"/>
                                     <constraint firstItem="hb6-Mm-FAr" firstAttribute="width" secondItem="hb6-Mm-FAr" secondAttribute="height" multiplier="1:1" id="RKy-Tm-rZ1"/>
                                     <constraint firstItem="T4T-jZ-Plg" firstAttribute="centerY" secondItem="9zv-PJ-wDo" secondAttribute="centerY" id="Vet-Bw-5zS"/>
+                                    <constraint firstItem="hcV-xb-3B9" firstAttribute="trailing" secondItem="VwM-fH-sFY" secondAttribute="trailing" constant="-10" id="X0h-xb-bVV"/>
                                     <constraint firstAttribute="trailing" secondItem="Nv3-Yb-hE9" secondAttribute="trailing" id="Xmg-Pn-UCB"/>
                                     <constraint firstItem="hb6-Mm-FAr" firstAttribute="leading" secondItem="9zv-PJ-wDo" secondAttribute="trailing" constant="30" id="che-5l-Dyb"/>
                                     <constraint firstItem="hb6-Mm-FAr" firstAttribute="centerY" secondItem="9zv-PJ-wDo" secondAttribute="centerY" id="iBd-yn-cPv"/>

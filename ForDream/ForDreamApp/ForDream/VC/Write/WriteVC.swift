@@ -13,8 +13,10 @@ import SwiftyPickerPopover
 class WriteVC: UIViewController {
     
     var ref = Database.database().reference()
-    var dreamContainers = DreamContainer.sharedInstance
+    var dreamContainer = DreamContainer.sharedInstance
     var dream = Dream()
+    var model = Model()
+    
     let dateFormatter = DateFormatter()
     
     @IBOutlet weak var detailTxtView: UITextView!
@@ -24,7 +26,6 @@ class WriteVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         dateFormatter.dateFormat = "yyyy-MM-dd"
         let date = Date()
         writingDateBtn.setTitle(dateFormatter.string(from: date), for: UIControl.State.normal)
@@ -62,34 +63,53 @@ class WriteVC: UIViewController {
     }
     
     @IBAction func saveActionBtn(_ sender: UIButton) {
-        if detailTxtView.text != nil {
-            let alert = UIAlertController(title: "저장완료", message: "저장하시겠어요?", preferredStyle: UIAlertController.Style.alert)
+        if detailTxtView.text != "" {
+            let alert = UIAlertController(title: "저장", message: "저장하시겠어요?", preferredStyle: UIAlertController.Style.alert)
             let doneAction = UIAlertAction(title: "확인", style: UIAlertAction.Style.default) { (_) in
-                self.saveAction()
+                self.DateCheckAndSave()
                 self.dismiss(animated: true, completion: nil)
             }
             let cancelAction = UIAlertAction(title: "취소", style: UIAlertAction.Style.cancel, handler: nil)
            
             alert.addAction(cancelAction)
             alert.addAction(doneAction)
-            
+            present(alert, animated: true, completion: nil)
+        } else {
+            let alert = UIAlertController(title: nil, message: "내용을 입력해주세요ㅠ", preferredStyle: UIAlertController.Style.alert)
+            let okAction = UIAlertAction(title: "넹", style: UIAlertAction.Style.default, handler: nil)
+    
+            alert.addAction(okAction)
             present(alert, animated: true, completion: nil)
         }
     }
     
-    func saveAction() {
-        let uid = Auth.auth().currentUser?.uid
-        
-        dream.detailTxt = detailTxtView.text!
+    func DateCheckAndSave() {
         dream.writedDate = writingDateBtn.currentTitle!
+        dream.detailTxt = detailTxtView.text
         
-        dreamContainers.dreamContainers.append(dream)
-        
-        let idx = String(dreamContainers.dreamContainers.count)
-        ref.child("users").child(uid!).child("dream").child(idx).child("content").setValue(dream.detailTxt)
-        ref.child("users").child(uid!).child("dream").child(idx).child("writeDate").setValue(dream.writedDate)
-        ref.child("users").child(uid!).child("dream").child(idx).child("starStorage").setValue(dream.starStorageIsChecked)
-        
+        if dreamContainer.dreamContainers.contains(where: { (Dream) -> Bool in
+            if Dream.writedDate == dream.writedDate {
+                return true
+            } else {
+                return false
+            }
+        }) {
+            let alert = UIAlertController(title: "이미 등록된 날짜에요", message: "이전의 내용을 삭제하고 새로운 내용으로 저장할까요?", preferredStyle: UIAlertController.Style.alert)
+            
+            let doneAction = UIAlertAction(title: "네", style: UIAlertAction.Style.default) { _ in
+                self.model.saveAction(dream: self.dream, index: self.dreamContainer.dreamContainers.count)
+                self.dismiss(animated: true, completion: nil)
+            }
+            let cancelAction = UIAlertAction(title: "아니오", style: UIAlertAction.Style.cancel, handler: nil)
+            
+            alert.addAction(cancelAction)
+            alert.addAction(doneAction)
+            
+            present(alert, animated: true, completion: nil)
+        } else {
+            model.saveAction(dream: dream, index: dreamContainer.dreamContainers.count)
+            dismiss(animated: true, completion: nil)
+        }
     }
     
 }

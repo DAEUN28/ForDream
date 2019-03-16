@@ -8,14 +8,17 @@
 
 import Foundation
 
-class Dream {
-    var detailTxt: String
-    var writedDate: String
-    var starStorageIsChecked: Bool
+struct Dream {
+    var detailTxt: String = ""
+    var starStorageIsChecked: Bool = false
+    var writedDate: String = ""
+}
+
+class DreamContainer {
+    static let sharedInstance = DreamContainer()
+    var dreamContainers: [Dream] = [Dream]()
     
-    init() {
-        detailTxt = ""
-        writedDate = ""
-        starStorageIsChecked = false
+    private init() {
+        
     }
 }
