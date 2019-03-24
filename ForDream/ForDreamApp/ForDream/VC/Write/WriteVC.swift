@@ -7,12 +7,10 @@
 //
 
 import UIKit
-import Firebase
 import SwiftyPickerPopover
 
-class WriteVC: UIViewController {
+class WriteVC: UIViewController, UITextFieldDelegate {
     
-    var ref = Database.database().reference()
     var dreamContainer = DreamContainer.sharedInstance
     var dream = Dream()
     var model = Model()
@@ -23,7 +21,6 @@ class WriteVC: UIViewController {
     @IBOutlet weak var writingDateBtn: UIButton!
     @IBOutlet weak var starStorageBtn: UIButton!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         dateFormatter.dateFormat = "yyyy-MM-dd"
@@ -31,7 +28,12 @@ class WriteVC: UIViewController {
         writingDateBtn.setTitle(dateFormatter.string(from: date), for: UIControl.State.normal)
     }
     
-    @IBAction func moveToMainBtn(_ sender: UIButton) {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    @IBAction func moveToMainBtnAction(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
     
@@ -39,7 +41,7 @@ class WriteVC: UIViewController {
         var dateContainer: String?
         dateFormatter.dateFormat = "yyyy-MM-dd"
         
-        _ = DatePickerPopover(title: "꿈꾼 날짜")
+        DatePickerPopover(title: "꿈꾼 날짜")
             .setDateMode(.date)
             .setSelectedDate(Date())
             .setDoneButton(action: { popover, selectedDate in

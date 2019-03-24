@@ -17,24 +17,26 @@ class Model {
     func fetchContainers(loadingIsFinished: @escaping () -> Void) {
         let base = Base()
         
-        base.ref.child("users").child(base.uid!).child("dream").observe(DataEventType.value) { (DataSnapshot) in
-            self.dreamContainers.dreamContainers.removeAll()
-            
-            if DataSnapshot.exists() {
-                let dataTemp = DataSnapshot.value as! [[String:Any]]
+        if Auth.auth().currentUser != nil {
+            base.ref.child("users").child(base.uid!).child("dream").observe(DataEventType.value) { (DataSnapshot) in
+                self.dreamContainers.dreamContainers.removeAll()
                 
-                for (_ , element) in dataTemp.enumerated() {
-                    self.dream.detailTxt = element["detailTxt"] as! String
-                    self.dream.writedDate = element["writedDate"] as! String
-                    self.dream.starStorageIsChecked = element["starStorageIsChecked"] as! Bool
-                    self.dreamContainers.dreamContainers.append(self.dream)
+                if DataSnapshot.exists() {
+                    let dataTemp = DataSnapshot.value as! [[String:Any]]
+                    
+                    for (_ , element) in dataTemp.enumerated() {
+                        self.dream.detailTxt = element["detailTxt"] as! String
+                        self.dream.writedDate = element["writedDate"] as! String
+                        self.dream.starStorageIsChecked = element["starStorageIsChecked"] as! Bool
+                        self.dreamContainers.dreamContainers.append(self.dream)
+                    }
+                    
+                    self.dreamContainers.dreamContainers = self.ascendingOrder(dream: self.dreamContainers.dreamContainers)
                 }
-                
-                self.dreamContainers.dreamContainers = self.dreamContainers.dreamContainers.sorted(by: { (d1, d2) -> Bool in
-                    d1.writedDate < d2.writedDate
-                })
+                loadingIsFinished()
             }
-            loadingIsFinished()
+        } else {
+            print(Error.self)
         }
     }
     
@@ -67,4 +69,16 @@ class Model {
         updateAction()
     }
     
+    func ascendingOrder(dream: [Dream]) -> [Dream] {
+        return dream.sorted(by: { (d1, d2) -> Bool in
+            d1.writedDate < d2.writedDate
+            
+        })
+    }
+    
+    func descendingOrder(dream: [Dream]) -> [Dream] {
+        return dream.sorted(by: { (d1, d2) -> Bool in
+            d1.writedDate > d2.writedDate
+        })
+    }
 }

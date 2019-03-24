@@ -22,14 +22,14 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Detail Dream " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Nv3-Yb-hE9">
-                                        <rect key="frame" x="0.0" y="46" width="414" height="712"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="698"/>
                                         <color key="backgroundColor" red="0.63137254901960782" green="0.98039215686274506" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hb6-Mm-FAr">
-                                        <rect key="frame" x="314" y="778" width="40" height="40"/>
+                                        <rect key="frame" x="314" y="768" width="40" height="40"/>
                                         <state key="normal" title="S" image="save.png">
                                             <color key="titleColor" red="0.63137254899999995" green="0.98039215690000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
@@ -38,7 +38,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zv-PJ-wDo">
-                                        <rect key="frame" x="130" y="778" width="154" height="40"/>
+                                        <rect key="frame" x="130" y="768" width="154" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="WritingDate">
                                             <color key="titleColor" red="0.63137254899999995" green="0.98039215690000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -48,7 +48,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4T-jZ-Plg">
-                                        <rect key="frame" x="60" y="778" width="40" height="40"/>
+                                        <rect key="frame" x="60" y="768" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="GDH-Ag-BAT"/>
                                         </constraints>
@@ -59,18 +59,19 @@
                                             <action selector="starStorageActionBtn:" destination="AfL-D0-y2V" eventType="touchUpInside" id="nof-iD-cSU"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8l-8z-5tc">
-                                        <rect key="frame" x="10" y="0.0" width="35" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="취소">
-                                            <color key="titleColor" red="0.63137254899999995" green="0.98039215690000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8l-8z-5tc">
+                                        <rect key="frame" x="10" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="d8l-8z-5tc" secondAttribute="height" multiplier="1:1" id="SPH-HQ-Wkf"/>
+                                            <constraint firstAttribute="height" constant="40" id="mOv-bN-59A"/>
+                                        </constraints>
+                                        <state key="normal" title="B" image="backPage.png"/>
                                         <connections>
-                                            <action selector="moveToMainBtn:" destination="AfL-D0-y2V" eventType="touchUpInside" id="0wz-h5-Soh"/>
+                                            <action selector="moveToMainBtnAction:" destination="AfL-D0-y2V" eventType="touchUpInside" id="bd7-By-z87"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*수정불가*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcV-xb-3B9">
-                                        <rect key="frame" x="313" y="5" width="91" height="26"/>
+                                        <rect key="frame" x="313" y="7.5" width="91" height="25.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <color key="textColor" red="0.63137254899999995" green="0.98039215690000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -100,7 +101,7 @@
                         <constraints>
                             <constraint firstItem="M7T-nB-B5b" firstAttribute="top" secondItem="VwM-fH-sFY" secondAttribute="top" id="7DO-Y4-5oD"/>
                             <constraint firstItem="VwM-fH-sFY" firstAttribute="trailing" secondItem="M7T-nB-B5b" secondAttribute="trailing" id="CdO-VU-y36"/>
-                            <constraint firstItem="9zv-PJ-wDo" firstAttribute="bottom" secondItem="M7T-nB-B5b" secondAttribute="bottom" id="Lqh-9o-dVo"/>
+                            <constraint firstItem="9zv-PJ-wDo" firstAttribute="bottom" secondItem="M7T-nB-B5b" secondAttribute="bottom" constant="-10" id="Lqh-9o-dVo"/>
                             <constraint firstItem="M7T-nB-B5b" firstAttribute="bottom" secondItem="VwM-fH-sFY" secondAttribute="bottom" id="Lur-ff-dW3"/>
                             <constraint firstItem="M7T-nB-B5b" firstAttribute="leading" secondItem="d8l-8z-5tc" secondAttribute="leading" constant="-10" id="X0a-s3-Tdd"/>
                             <constraint firstItem="M7T-nB-B5b" firstAttribute="leading" secondItem="VwM-fH-sFY" secondAttribute="leading" id="wkE-6f-n1s"/>
@@ -108,15 +109,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="M7T-nB-B5b"/>
                     </view>
-                    <navigationItem key="navigationItem" id="x7y-gs-qt4">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="lqg-y6-isW">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="J5b-mk-ofQ">
-                                <rect key="frame" x="20" y="7" width="92" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="메인으로"/>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
                     <connections>
                         <outlet property="detailTxtView" destination="Nv3-Yb-hE9" id="LDi-9Q-cEW"/>
                         <outlet property="starStorageBtn" destination="T4T-jZ-Plg" id="SFm-SH-Q7Y"/>
@@ -129,6 +121,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backPage.png" width="512" height="512"/>
         <image name="save.png" width="512" height="512"/>
         <image name="selectStar.png" width="480" height="480"/>
     </resources>

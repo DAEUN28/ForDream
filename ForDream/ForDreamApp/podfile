@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+# platform :ios, '12.1'
 
 target 'ForDream' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
@@ -12,4 +12,6 @@ target 'ForDream' do
   pod 'Firebase/Database'
   pod 'UIColor_Hex_Swift', '~> 4.2.0'
   pod 'SwiftyPickerPopover'
+  pod 'SideMenu', '~> 5.0.1'
+  pod 'TextFieldEffects'
 end

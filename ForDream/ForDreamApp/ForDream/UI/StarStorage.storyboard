@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jvI-BD-2MK">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="fa-regular-400.ttf">
+            <string>FontAwesome5Free-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Star StorageVC-->
+        <scene sceneID="rAo-kf-HdX">
+            <objects>
+                <viewController storyboardIdentifier="StarStorageVC" id="jvI-BD-2MK" customClass="StarStorageVC" customModule="ForDream" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OIS-vH-fDI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aLm-P4-Rs0">
+                                <rect key="frame" x="0.0" y="89" width="414" height="773"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="StarStorageDreamCell" rowHeight="60" id="Hxt-v9-ocX" customClass="DreamCell" customModule="ForDream" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hxt-v9-ocX" id="7H5-Ys-44D">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="59.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="yyyy-mm-dd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xBg-3l-Qag">
+                                                    <rect key="frame" x="136.5" y="15" width="141.5" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <color key="textColor" red="0.63137254899999995" green="0.98039215690000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="xBg-3l-Qag" firstAttribute="centerX" secondItem="7H5-Ys-44D" secondAttribute="centerX" id="6ze-9d-k66"/>
+                                                <constraint firstItem="xBg-3l-Qag" firstAttribute="centerY" secondItem="7H5-Ys-44D" secondAttribute="centerY" id="hcu-ki-0J4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="writedDateLbl" destination="xBg-3l-Qag" id="jgf-yV-fPz"/>
+                                            <segue destination="3i1-Ak-qC0" kind="showDetail" identifier="showStarStorageDetail" id="cjU-tu-dl6"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="jvI-BD-2MK" id="Nv4-OE-XwN"/>
+                                    <outlet property="delegate" destination="jvI-BD-2MK" id="K14-C8-IuL"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9lS-tY-PVL">
+                                <rect key="frame" x="10" y="44" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9lS-tY-PVL" secondAttribute="height" multiplier="1:1" id="Wy1-Br-2qy"/>
+                                    <constraint firstAttribute="height" constant="40" id="tuX-aB-G8L"/>
+                                </constraints>
+                                <state key="normal" title="b" image="backPage.png"/>
+                                <connections>
+                                    <action selector="moveToMainBtnAction:" destination="jvI-BD-2MK" eventType="touchUpInside" id="Aof-8s-srb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="특별함" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iT-1L-vUh">
+                                <rect key="frame" x="174.5" y="49" width="65" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.63137254899999995" green="0.98039215690000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aLm-P4-Rs0" firstAttribute="top" secondItem="2iT-1L-vUh" secondAttribute="bottom" constant="10" id="0G6-Nz-WON"/>
+                            <constraint firstItem="2iT-1L-vUh" firstAttribute="centerX" secondItem="2U2-BC-wvf" secondAttribute="centerX" id="3CO-9k-QIb"/>
+                            <constraint firstItem="aLm-P4-Rs0" firstAttribute="leading" secondItem="2U2-BC-wvf" secondAttribute="leading" id="5dw-Ho-8G2"/>
+                            <constraint firstItem="2U2-BC-wvf" firstAttribute="trailing" secondItem="aLm-P4-Rs0" secondAttribute="trailing" id="6dU-Qm-IO1"/>
+                            <constraint firstItem="9lS-tY-PVL" firstAttribute="top" secondItem="2U2-BC-wvf" secondAttribute="top" id="K61-rz-dtE"/>
+                            <constraint firstItem="2U2-BC-wvf" firstAttribute="bottom" secondItem="aLm-P4-Rs0" secondAttribute="bottom" id="PRD-wO-vTe"/>
+                            <constraint firstItem="9lS-tY-PVL" firstAttribute="leading" secondItem="2U2-BC-wvf" secondAttribute="leading" constant="10" id="ewl-ae-xVJ"/>
+                            <constraint firstItem="2iT-1L-vUh" firstAttribute="centerY" secondItem="9lS-tY-PVL" secondAttribute="centerY" id="uKs-uY-atf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2U2-BC-wvf"/>
+                    </view>
+                    <connections>
+                        <outlet property="starStorageTableView" destination="aLm-P4-Rs0" id="O1E-k0-JJm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="moL-Kj-YxP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4283" y="-794"/>
+        </scene>
+        <!--Star Storage DetailPVC-->
+        <scene sceneID="HrW-Fr-mid">
+            <objects>
+                <viewController storyboardIdentifier="StarStorageDetailPVC" id="3i1-Ak-qC0" customClass="StarStorageDetailPVC" customModule="ForDream" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VF7-5g-1XB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="8E0-Pd-vOI"/>
+                    </view>
+                    <attributedString key="userComments">
+                        <fragment content="DetailPVC"/>
+                    </attributedString>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e5N-SF-tZJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5025" y="-793"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="qdj-Dd-dfw">
+            <objects>
+                <pageViewController storyboardIdentifier="StarStorageDetailPageVC" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="eQo-vc-9rq" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8zN-im-xBr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5758" y="-793"/>
+        </scene>
+        <!--Star Storage DetailVC-->
+        <scene sceneID="X6N-vG-cIU">
+            <objects>
+                <viewController storyboardIdentifier="StarStorageDetailVC" id="sof-MV-Tge" customClass="StarStorageDetailVC" customModule="ForDream" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CcH-vg-SMZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2UV-Rb-pdd">
+                                <rect key="frame" x="354" y="44" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2UV-Rb-pdd" secondAttribute="height" multiplier="1:1" id="UpB-8V-CD3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FontAwesome5Free-Regular" family="Font Awesome 5 Free" pointSize="40"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" red="0.63137254899999995" green="0.98039215690000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectedCloseDetailBtnAction:" destination="sof-MV-Tge" eventType="touchUpInside" id="wcx-Cq-uVw"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Detail Dream " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qzy-Zp-bpU">
+                                <rect key="frame" x="0.0" y="104" width="414" height="698"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.63137254899999995" green="0.98039215690000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="yyyy-mm-dd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvA-BU-3Ot">
+                                <rect key="frame" x="122.5" y="812" width="169.5" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.63137254899999995" green="0.98039215690000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucg-6r-Oi7">
+                                <rect key="frame" x="302" y="812" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="VJY-du-Ob2"/>
+                                    <constraint firstAttribute="width" secondItem="ucg-6r-Oi7" secondAttribute="height" multiplier="1:1" id="gGL-4s-Lbp"/>
+                                </constraints>
+                                <state key="normal" title="D" image="deleteSelectedDream.png">
+                                    <color key="titleColor" red="0.63137254899999995" green="0.98039215690000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectedDeleteBtnAction:" destination="sof-MV-Tge" eventType="touchUpInside" id="sl6-sW-S3z"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="028-2B-3ZN">
+                                <rect key="frame" x="187.5" y="55.5" width="39" height="37"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tLq-D2-yRO" firstAttribute="trailing" secondItem="qzy-Zp-bpU" secondAttribute="trailing" id="26y-TU-aFu"/>
+                            <constraint firstItem="qzy-Zp-bpU" firstAttribute="centerY" secondItem="tLq-D2-yRO" secondAttribute="centerY" id="C8C-6t-BvN"/>
+                            <constraint firstItem="ucg-6r-Oi7" firstAttribute="centerY" secondItem="kvA-BU-3Ot" secondAttribute="centerY" id="RXM-aX-BEf"/>
+                            <constraint firstItem="tLq-D2-yRO" firstAttribute="trailing" secondItem="2UV-Rb-pdd" secondAttribute="trailing" id="jgZ-N6-yle"/>
+                            <constraint firstItem="ucg-6r-Oi7" firstAttribute="leading" secondItem="kvA-BU-3Ot" secondAttribute="trailing" constant="10" id="kA5-Q5-pMh"/>
+                            <constraint firstItem="028-2B-3ZN" firstAttribute="centerY" secondItem="2UV-Rb-pdd" secondAttribute="centerY" id="lCK-2d-SrE"/>
+                            <constraint firstItem="qzy-Zp-bpU" firstAttribute="leading" secondItem="tLq-D2-yRO" secondAttribute="leading" id="noE-ak-aM3"/>
+                            <constraint firstItem="qzy-Zp-bpU" firstAttribute="top" secondItem="2UV-Rb-pdd" secondAttribute="bottom" id="oJK-ho-9KR"/>
+                            <constraint firstItem="tLq-D2-yRO" firstAttribute="bottom" secondItem="kvA-BU-3Ot" secondAttribute="bottom" constant="10" id="t5D-qJ-wZe"/>
+                            <constraint firstItem="028-2B-3ZN" firstAttribute="centerX" secondItem="qzy-Zp-bpU" secondAttribute="centerX" id="tOw-Pz-mPv"/>
+                            <constraint firstItem="ucg-6r-Oi7" firstAttribute="height" secondItem="kvA-BU-3Ot" secondAttribute="height" id="tqY-4A-OCm"/>
+                            <constraint firstItem="kvA-BU-3Ot" firstAttribute="centerX" secondItem="qzy-Zp-bpU" secondAttribute="centerX" id="u5i-sF-gDx"/>
+                            <constraint firstItem="kvA-BU-3Ot" firstAttribute="top" secondItem="qzy-Zp-bpU" secondAttribute="bottom" constant="10" id="vHW-7t-Wfa"/>
+                            <constraint firstItem="2UV-Rb-pdd" firstAttribute="top" secondItem="tLq-D2-yRO" secondAttribute="top" id="vPM-1w-uNh"/>
+                            <constraint firstItem="qzy-Zp-bpU" firstAttribute="centerX" secondItem="tLq-D2-yRO" secondAttribute="centerX" id="yFL-I9-Xth"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tLq-D2-yRO"/>
+                    </view>
+                    <connections>
+                        <outlet property="closeDetailBtn" destination="2UV-Rb-pdd" id="7s1-pf-uFU"/>
+                        <outlet property="deleteInDetailBtn" destination="ucg-6r-Oi7" id="Ikx-ZQ-4ru"/>
+                        <outlet property="detailTxtView" destination="qzy-Zp-bpU" id="lCS-tU-thb"/>
+                        <outlet property="pageControl" destination="028-2B-3ZN" id="IeL-Yj-TzI"/>
+                        <outlet property="writedDateLbl" destination="kvA-BU-3Ot" id="lXU-dq-ojC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tOD-fV-dQ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6465" y="-793"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backPage.png" width="512" height="512"/>
+        <image name="deleteSelectedDream.png" width="512" height="512"/>
+    </resources>
+</document>

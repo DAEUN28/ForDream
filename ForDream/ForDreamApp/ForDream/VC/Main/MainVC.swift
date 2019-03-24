@@ -11,6 +11,7 @@ import Firebase
 
 class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    var handle: AuthStateDidChangeListenerHandle?
     var dreamContainers = DreamContainer.sharedInstance
     var dream = Dream()
     var model = Model()
@@ -20,8 +21,6 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.init()
         
         DispatchQueue.main.async {
             self.model.fetchContainers { () in
@@ -34,11 +33,9 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                 }
             }
         }
-
     }
-    
-    func `init`() {
-        Auth.auth().addStateDidChangeListener { (auth, user) in
+    override func viewWillAppear(_ animated: Bool) {
+        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
             if user == nil {
                 let loginVC = self.storyboard?.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
                 self.present(loginVC, animated: false, completion: nil)
@@ -46,20 +43,22 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        Auth.auth().removeStateDidChangeListener(handle!)
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dreamContainers.dreamContainers.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 70
+        return 60
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let dreamCell = mainTableView.dequeueReusableCell(withIdentifier: "Dream Cell", for: indexPath) as! DreamCell
+        let dreamCell = mainTableView.dequeueReusableCell(withIdentifier: "DreamCell", for: indexPath) as! DreamCell
         
-        let dicTemp = dreamContainers.dreamContainers[indexPath.row]
-        
-        dreamCell.writedDateLbl.text! = dicTemp.writedDate
+        dreamCell.writedDateLbl.text! = dreamContainers.dreamContainers[indexPath.row].writedDate
         
         return dreamCell
     }
@@ -90,16 +89,14 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }
     }
     
-    @IBAction func showMenuBtn(_ sender: UIButton) {
-    }
-    
     @IBAction func moveToWriteBtn(_ sender: UIButton) {
         let writeVC = storyboard?.instantiateViewController(withIdentifier: "WriteVC") as! WriteVC
         self.present(writeVC, animated: true, completion: nil)
     }
     
     @IBAction func moveToSearchBtn(_ sender: UIButton) {
-        
+        let searchVC = storyboard?.instantiateViewController(withIdentifier: "SearchVC") as! SearchVC
+        self.present(searchVC, animated: true, completion: nil)
     }
     
     @IBAction func allDeleteBtn(_ sender: UIButton) {

@@ -12,7 +12,6 @@
 		3717C4702219759A00E12181 /* allDeleteDream.png in Resources */ = {isa = PBXBuildFile; fileRef = 3717C46E2219759A00E12181 /* allDeleteDream.png */; };
 		3717C473221A430F00E12181 /* selectCheckBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 3717C471221A430F00E12181 /* selectCheckBtn.png */; };
 		3717C474221A430F00E12181 /* selectedCheckBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 3717C472221A430F00E12181 /* selectedCheckBtn.png */; };
-		3717C476221A523C00E12181 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3717C475221A523C00E12181 /* Config.swift */; };
 		3717C478221A527700E12181 /* Dream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3717C477221A527700E12181 /* Dream.swift */; };
 		3717C4A92223E9A300E12181 /* save.png in Resources */ = {isa = PBXBuildFile; fileRef = 3717C4A82223E9A300E12181 /* save.png */; };
 		3718CBCF2215B435000E85E3 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3718CBCE2215B435000E85E3 /* DetailVC.swift */; };
@@ -29,20 +28,25 @@
 		372C13E52216A27600B7A972 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372C13E32216A27600B7A972 /* Search.storyboard */; };
 		372C13E72216A29A00B7A972 /* Write.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372C13E62216A29A00B7A972 /* Write.storyboard */; };
 		372C13F02216B71700B7A972 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372C13EF2216B71700B7A972 /* MenuCell.swift */; };
-		372C13F22216C49500B7A972 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372C13F12216C49500B7A972 /* Menu.storyboard */; };
-		372C13F72216C7BD00B7A972 /* StarStorageTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372C13F62216C7BD00B7A972 /* StarStorageTVC.swift */; };
 		372C14182216FB3E00B7A972 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 372C14172216FB3D00B7A972 /* GoogleService-Info.plist */; };
-		372C141A2217134200B7A972 /* ConfigVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372C14192217134200B7A972 /* ConfigVC.swift */; };
 		372C141C2217187D00B7A972 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372C141B2217187D00B7A972 /* Base.swift */; };
 		372C141E221726B100B7A972 /* RemoteConfigDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 372C141D221726B100B7A972 /* RemoteConfigDefaults.plist */; };
 		3736B34E2217B7A900DDD158 /* checkBlackCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 3736B34D2217B7A900DDD158 /* checkBlackCircle.png */; };
-		3736B3502218775A00DDD158 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3736B34F2218775A00DDD158 /* MenuVC.swift */; };
+		3736B3502218775A00DDD158 /* MenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3736B34F2218775A00DDD158 /* MenuTVC.swift */; };
 		3736B3522218877300DDD158 /* DreamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3736B3512218877300DDD158 /* DreamCell.swift */; };
 		3736B35A22189A8C00DDD158 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 3736B35722189A8B00DDD158 /* menu.png */; };
 		3736B35B22189A8C00DDD158 /* selectStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3736B35822189A8B00DDD158 /* selectStar.png */; };
 		3736B35C22189A8C00DDD158 /* selectedStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3736B35922189A8B00DDD158 /* selectedStar.png */; };
 		3736B35F22189BBA00DDD158 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 3736B35D22189BBA00DDD158 /* search.png */; };
 		3736B36022189BBA00DDD158 /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = 3736B35E22189BBA00DDD158 /* edit.png */; };
+		37B7455B223FB531002883F4 /* SearchDreamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7455A223FB531002883F4 /* SearchDreamCell.swift */; };
+		37B7455D224078C6002883F4 /* SearchDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7455C224078C6002883F4 /* SearchDetailVC.swift */; };
+		37B7455F224078ED002883F4 /* SearchDetailPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7455E224078ED002883F4 /* SearchDetailPVC.swift */; };
+		37B745612246991B002883F4 /* StarStorageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B745602246991B002883F4 /* StarStorageVC.swift */; };
+		37B7456322469F06002883F4 /* backPage.png in Resources */ = {isa = PBXBuildFile; fileRef = 37B7456222469F06002883F4 /* backPage.png */; };
+		37B745652246A804002883F4 /* StarStorage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B745642246A804002883F4 /* StarStorage.storyboard */; };
+		37B745682246A8C4002883F4 /* StarStorageDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B745672246A8C4002883F4 /* StarStorageDetailVC.swift */; };
+		37B7456A2246A8DA002883F4 /* StarStorageDetailPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B745692246A8DA002883F4 /* StarStorageDetailPVC.swift */; };
 		37DEE9F322325B42000942D5 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DEE9F222325B42000942D5 /* Model.swift */; };
 		D0EF5979C5FC033D54B33D30 /* Pods_ForDream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94F8D84DAF7B4E8CCA5AED66 /* Pods_ForDream.framework */; };
 /* End PBXBuildFile section */
@@ -54,7 +58,6 @@
 		3717C46E2219759A00E12181 /* allDeleteDream.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = allDeleteDream.png; sourceTree = "<group>"; };
 		3717C471221A430F00E12181 /* selectCheckBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectCheckBtn.png; sourceTree = "<group>"; };
 		3717C472221A430F00E12181 /* selectedCheckBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectedCheckBtn.png; sourceTree = "<group>"; };
-		3717C475221A523C00E12181 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		3717C477221A527700E12181 /* Dream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dream.swift; sourceTree = "<group>"; };
 		3717C4A82223E9A300E12181 /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save.png; sourceTree = "<group>"; };
 		3718CBCE2215B435000E85E3 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
@@ -73,20 +76,25 @@
 		372C13E42216A27600B7A972 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ForDream/UI/Base.lproj/Search.storyboard; sourceTree = "<group>"; };
 		372C13E62216A29A00B7A972 /* Write.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Write.storyboard; path = ../../Write.storyboard; sourceTree = "<group>"; };
 		372C13EF2216B71700B7A972 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
-		372C13F12216C49500B7A972 /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
-		372C13F62216C7BD00B7A972 /* StarStorageTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarStorageTVC.swift; sourceTree = "<group>"; };
 		372C14172216FB3D00B7A972 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		372C14192217134200B7A972 /* ConfigVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigVC.swift; sourceTree = "<group>"; };
 		372C141B2217187D00B7A972 /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
 		372C141D221726B100B7A972 /* RemoteConfigDefaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RemoteConfigDefaults.plist; sourceTree = "<group>"; };
 		3736B34D2217B7A900DDD158 /* checkBlackCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkBlackCircle.png; sourceTree = "<group>"; };
-		3736B34F2218775A00DDD158 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		3736B34F2218775A00DDD158 /* MenuTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTVC.swift; sourceTree = "<group>"; };
 		3736B3512218877300DDD158 /* DreamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamCell.swift; sourceTree = "<group>"; };
 		3736B35722189A8B00DDD158 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		3736B35822189A8B00DDD158 /* selectStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectStar.png; sourceTree = "<group>"; };
 		3736B35922189A8B00DDD158 /* selectedStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectedStar.png; sourceTree = "<group>"; };
 		3736B35D22189BBA00DDD158 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
 		3736B35E22189BBA00DDD158 /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit.png; sourceTree = "<group>"; };
+		37B7455A223FB531002883F4 /* SearchDreamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDreamCell.swift; sourceTree = "<group>"; };
+		37B7455C224078C6002883F4 /* SearchDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailVC.swift; sourceTree = "<group>"; };
+		37B7455E224078ED002883F4 /* SearchDetailPVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailPVC.swift; sourceTree = "<group>"; };
+		37B745602246991B002883F4 /* StarStorageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarStorageVC.swift; sourceTree = "<group>"; };
+		37B7456222469F06002883F4 /* backPage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backPage.png; sourceTree = "<group>"; };
+		37B745642246A804002883F4 /* StarStorage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StarStorage.storyboard; sourceTree = "<group>"; };
+		37B745672246A8C4002883F4 /* StarStorageDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarStorageDetailVC.swift; sourceTree = "<group>"; };
+		37B745692246A8DA002883F4 /* StarStorageDetailPVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarStorageDetailPVC.swift; sourceTree = "<group>"; };
 		37DEE9F222325B42000942D5 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		506EC5817B92639E5FDC0513 /* Pods-ForDream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForDream.release.xcconfig"; path = "Target Support Files/Pods-ForDream/Pods-ForDream.release.xcconfig"; sourceTree = "<group>"; };
 		94F8D84DAF7B4E8CCA5AED66 /* Pods_ForDream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForDream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +115,7 @@
 		3718CBCD221583C4000E85E3 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				37B7456222469F06002883F4 /* backPage.png */,
 				3717C46E2219759A00E12181 /* allDeleteDream.png */,
 				3717C46D2219759900E12181 /* deleteSelectedDream.png */,
 				3736B35E22189BBA00DDD158 /* edit.png */,
@@ -165,7 +174,7 @@
 				372C13DC2216A17100B7A972 /* Auth.storyboard */,
 				372C13E32216A27600B7A972 /* Search.storyboard */,
 				372C13E62216A29A00B7A972 /* Write.storyboard */,
-				372C13F12216C49500B7A972 /* Menu.storyboard */,
+				37B745642246A804002883F4 /* StarStorage.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -177,7 +186,7 @@
 				372C13EA2216B67900B7A972 /* Write */,
 				372C13E92216B67200B7A972 /* Search */,
 				372C13E82216B66500B7A972 /* Auth */,
-				372C13F32216C67F00B7A972 /* Menu */,
+				37B745662246A86A002883F4 /* StarStorage */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -195,6 +204,8 @@
 			isa = PBXGroup;
 			children = (
 				3718CBD02215BB29000E85E3 /* SearchVC.swift */,
+				37B7455C224078C6002883F4 /* SearchDetailVC.swift */,
+				37B7455E224078ED002883F4 /* SearchDetailPVC.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -211,7 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				3723BAA8221460240010E753 /* MainVC.swift */,
-				3736B34F2218775A00DDD158 /* MenuVC.swift */,
+				3736B34F2218775A00DDD158 /* MenuTVC.swift */,
 				3718CBCE2215B435000E85E3 /* DetailVC.swift */,
 				37112402223CCE0D0099612E /* DetailPVC.swift */,
 			);
@@ -224,27 +235,28 @@
 				372C13EF2216B71700B7A972 /* MenuCell.swift */,
 				372C141B2217187D00B7A972 /* Base.swift */,
 				3736B3512218877300DDD158 /* DreamCell.swift */,
+				37B7455A223FB531002883F4 /* SearchDreamCell.swift */,
 			);
 			path = Custom;
-			sourceTree = "<group>";
-		};
-		372C13F32216C67F00B7A972 /* Menu */ = {
-			isa = PBXGroup;
-			children = (
-				372C13F62216C7BD00B7A972 /* StarStorageTVC.swift */,
-				372C14192217134200B7A972 /* ConfigVC.swift */,
-			);
-			path = Menu;
 			sourceTree = "<group>";
 		};
 		372C14162216DDE100B7A972 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3717C475221A523C00E12181 /* Config.swift */,
 				3717C477221A527700E12181 /* Dream.swift */,
 				37DEE9F222325B42000942D5 /* Model.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		37B745662246A86A002883F4 /* StarStorage */ = {
+			isa = PBXGroup;
+			children = (
+				37B745602246991B002883F4 /* StarStorageVC.swift */,
+				37B745672246A8C4002883F4 /* StarStorageDetailVC.swift */,
+				37B745692246A8DA002883F4 /* StarStorageDetailPVC.swift */,
+			);
+			path = StarStorage;
 			sourceTree = "<group>";
 		};
 		5A97B932947E2E57A130E05B /* Pods */ = {
@@ -324,8 +336,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				372C13F22216C49500B7A972 /* Menu.storyboard in Resources */,
 				372C14182216FB3E00B7A972 /* GoogleService-Info.plist in Resources */,
+				37B7456322469F06002883F4 /* backPage.png in Resources */,
 				372C13DE2216A17100B7A972 /* Auth.storyboard in Resources */,
 				3717C4702219759A00E12181 /* allDeleteDream.png in Resources */,
 				3736B35F22189BBA00DDD158 /* search.png in Resources */,
@@ -340,6 +352,7 @@
 				3717C473221A430F00E12181 /* selectCheckBtn.png in Resources */,
 				3736B35C22189A8C00DDD158 /* selectedStar.png in Resources */,
 				372C141E221726B100B7A972 /* RemoteConfigDefaults.plist in Resources */,
+				37B745652246A804002883F4 /* StarStorage.storyboard in Resources */,
 				3736B36022189BBA00DDD158 /* edit.png in Resources */,
 				3736B35B22189A8C00DDD158 /* selectStar.png in Resources */,
 				3723BAAC221460240010E753 /* Main.storyboard in Resources */,
@@ -384,7 +397,9 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyPickerPopover/SwiftyPickerPopover.framework",
+				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
 				"${BUILT_PRODUCTS_DIR}/UIColor_Hex_Swift/UIColor_Hex_Swift.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -396,7 +411,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyPickerPopover.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIColor_Hex_Swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -417,19 +434,22 @@
 				372C141C2217187D00B7A972 /* Base.swift in Sources */,
 				3718CBD12215BB29000E85E3 /* SearchVC.swift in Sources */,
 				3736B3522218877300DDD158 /* DreamCell.swift in Sources */,
-				3717C476221A523C00E12181 /* Config.swift in Sources */,
 				3718CBCF2215B435000E85E3 /* DetailVC.swift in Sources */,
-				372C141A2217134200B7A972 /* ConfigVC.swift in Sources */,
+				37B7455F224078ED002883F4 /* SearchDetailPVC.swift in Sources */,
 				3718CBD32215BB4E000E85E3 /* WriteVC.swift in Sources */,
-				3736B3502218775A00DDD158 /* MenuVC.swift in Sources */,
+				37B745612246991B002883F4 /* StarStorageVC.swift in Sources */,
+				3736B3502218775A00DDD158 /* MenuTVC.swift in Sources */,
 				3717C478221A527700E12181 /* Dream.swift in Sources */,
+				37B7455D224078C6002883F4 /* SearchDetailVC.swift in Sources */,
+				37B7456A2246A8DA002883F4 /* StarStorageDetailPVC.swift in Sources */,
 				3723BADB221561070010E753 /* JoinVC.swift in Sources */,
 				37112403223CCE0D0099612E /* DetailPVC.swift in Sources */,
-				372C13F72216C7BD00B7A972 /* StarStorageTVC.swift in Sources */,
 				3723BAA9221460240010E753 /* MainVC.swift in Sources */,
 				372C13F02216B71700B7A972 /* MenuCell.swift in Sources */,
 				3723BAA7221460240010E753 /* AppDelegate.swift in Sources */,
 				3723BAD9221560EF0010E753 /* LoginVC.swift in Sources */,
+				37B745682246A8C4002883F4 /* StarStorageDetailVC.swift in Sources */,
+				37B7455B223FB531002883F4 /* SearchDreamCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +613,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VY4FNTH9C6;
 				INFOPLIST_FILE = ForDream/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -611,6 +632,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VY4FNTH9C6;
 				INFOPLIST_FILE = ForDream/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

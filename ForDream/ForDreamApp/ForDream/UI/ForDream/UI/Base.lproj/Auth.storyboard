@@ -19,28 +19,53 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ForDream" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnk-LH-kkC">
-                                <rect key="frame" x="122.5" y="325" width="169" height="48"/>
+                                <rect key="frame" x="123" y="333.5" width="168.5" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이메일" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="X2P-bI-jFY">
-                                <rect key="frame" x="57" y="423" width="300" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="username"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="패스워드" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="14e-hR-tbA">
-                                <rect key="frame" x="57" y="473" width="300" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="이메일" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="X2P-bI-jFY" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="103" y="411.5" width="208.5" height="41.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="14e-hR-tbA" secondAttribute="height" multiplier="300:30" id="YVQ-Wq-JzD"/>
+                                    <constraint firstAttribute="width" secondItem="X2P-bI-jFY" secondAttribute="height" multiplier="250:50" id="wG5-Qn-2SC"/>
                                 </constraints>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" textContentType="email"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                        <color key="value" red="0.63137254899999995" green="0.98039215690000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="Jaa-9z-S5u" id="TSD-jk-olB"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="비밀번호" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="14e-hR-tbA" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="103" y="473" width="208.5" height="41.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="14e-hR-tbA" secondAttribute="height" multiplier="250:50" id="YVQ-Wq-JzD"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                        <color key="value" red="0.63137254899999995" green="0.98039215690000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="Jaa-9z-S5u" id="2aP-NI-beO"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JVV-wS-rO0">
-                                <rect key="frame" x="57" y="508" width="171" height="30"/>
+                                <rect key="frame" x="103" y="524.5" width="171" height="30"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
                                 <state key="normal" title="ForDream이 처음이신가요?">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -50,7 +75,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uh1-Nd-DWL">
-                                <rect key="frame" x="182" y="558" width="50" height="50"/>
+                                <rect key="frame" x="182" y="574.5" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="uh1-Nd-DWL" secondAttribute="height" multiplier="1:1" id="4OB-du-2i5"/>
                                     <constraint firstAttribute="width" constant="50" id="eVW-Sc-VPN"/>
@@ -68,13 +93,15 @@
                             <constraint firstItem="uh1-Nd-DWL" firstAttribute="top" secondItem="JVV-wS-rO0" secondAttribute="bottom" constant="20" id="3Mc-iz-y52"/>
                             <constraint firstItem="JVV-wS-rO0" firstAttribute="leading" secondItem="14e-hR-tbA" secondAttribute="leading" id="A5p-Dv-5i2"/>
                             <constraint firstItem="14e-hR-tbA" firstAttribute="centerX" secondItem="c31-HY-hpb" secondAttribute="centerX" id="CTm-W5-bSw"/>
-                            <constraint firstItem="JVV-wS-rO0" firstAttribute="top" secondItem="14e-hR-tbA" secondAttribute="bottom" constant="5" id="EZd-U6-6lI"/>
-                            <constraint firstItem="X2P-bI-jFY" firstAttribute="top" secondItem="hnk-LH-kkC" secondAttribute="bottom" constant="50" id="HFk-Mc-rqL"/>
+                            <constraint firstItem="X2P-bI-jFY" firstAttribute="width" relation="greaterThanOrEqual" secondItem="hnk-LH-kkC" secondAttribute="width" constant="40" id="Ckh-4P-ERe"/>
+                            <constraint firstItem="JVV-wS-rO0" firstAttribute="top" secondItem="14e-hR-tbA" secondAttribute="bottom" constant="10" id="EZd-U6-6lI"/>
+                            <constraint firstItem="14e-hR-tbA" firstAttribute="trailing" secondItem="X2P-bI-jFY" secondAttribute="trailing" id="QUr-P9-AYN"/>
                             <constraint firstItem="14e-hR-tbA" firstAttribute="top" secondItem="X2P-bI-jFY" secondAttribute="bottom" constant="20" id="TF8-Y2-byV"/>
+                            <constraint firstItem="X2P-bI-jFY" firstAttribute="top" secondItem="hnk-LH-kkC" secondAttribute="bottom" constant="30" id="U2y-fr-cne"/>
                             <constraint firstItem="X2P-bI-jFY" firstAttribute="centerX" secondItem="c31-HY-hpb" secondAttribute="centerX" id="WhC-Cc-R8o"/>
                             <constraint firstItem="uh1-Nd-DWL" firstAttribute="centerX" secondItem="14e-hR-tbA" secondAttribute="centerX" id="cno-fT-KhZ"/>
                             <constraint firstItem="X2P-bI-jFY" firstAttribute="bottom" secondItem="c31-HY-hpb" secondAttribute="centerY" id="mVp-Jg-qpu"/>
-                            <constraint firstItem="X2P-bI-jFY" firstAttribute="width" secondItem="X2P-bI-jFY" secondAttribute="height" multiplier="300:30" id="nsM-Dj-8ge"/>
+                            <constraint firstItem="14e-hR-tbA" firstAttribute="leading" secondItem="X2P-bI-jFY" secondAttribute="leading" id="ugT-xl-n5w"/>
                             <constraint firstItem="X2P-bI-jFY" firstAttribute="centerX" secondItem="hnk-LH-kkC" secondAttribute="centerX" id="wiB-Ly-Fs9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="c31-HY-hpb"/>
@@ -107,51 +134,84 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="꿈을 기억할 정보를 입력해주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKg-Ww-KPs">
-                                <rect key="frame" x="97" y="347" width="220" height="21"/>
+                                <rect key="frame" x="97" y="329.5" width="220" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이메일" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="DNm-Vl-CaW">
-                                <rect key="frame" x="57" y="388" width="300" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="이메일" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="DNm-Vl-CaW" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="103" y="370.5" width="208.5" height="41.5"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" textContentType="username"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" textContentType="email"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                        <color key="value" red="0.63137254899999995" green="0.98039215690000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="rui-CF-YRm" id="8UB-3H-gj1"/>
+                                </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="패스워드" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="AN5-Qe-fJV">
-                                <rect key="frame" x="57" y="438" width="300" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="AN5-Qe-fJV" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="103" y="432" width="208.5" height="42"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="AN5-Qe-fJV" secondAttribute="height" multiplier="300:30" id="oF0-wv-J8Z"/>
+                                    <constraint firstAttribute="width" secondItem="AN5-Qe-fJV" secondAttribute="height" multiplier="250:50" id="oF0-wv-J8Z"/>
                                 </constraints>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES" textContentType="password"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                        <color key="value" red="0.63137254899999995" green="0.98039215690000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="rui-CF-YRm" id="Pho-b4-YZp"/>
+                                </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="재입력해주세요" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Kcl-7e-1bO">
-                                <rect key="frame" x="57" y="488" width="300" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="비밀번호 재입력" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Kcl-7e-1bO" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="103" y="494" width="208.5" height="41.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="Kcl-7e-1bO" secondAttribute="height" multiplier="300 : 30" id="Dch-yE-g2L"/>
+                                    <constraint firstAttribute="width" secondItem="Kcl-7e-1bO" secondAttribute="height" multiplier="250:50" id="Dch-yE-g2L"/>
                                 </constraints>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                        <color key="value" red="0.63137254899999995" green="0.98039215690000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="rui-CF-YRm" id="d6D-ce-Yrp"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9H2-Qh-qP3">
-                                <rect key="frame" x="57" y="528" width="300" height="21"/>
+                                <rect key="frame" x="103" y="545.5" width="208.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ForDream" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWk-F0-ObP">
-                                <rect key="frame" x="123" y="249" width="168.5" height="48"/>
+                                <rect key="frame" x="123" y="231.5" width="168.5" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVp-SH-kSX">
-                                <rect key="frame" x="182" y="569" width="50" height="50"/>
+                                <rect key="frame" x="182" y="586.5" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="UVp-SH-kSX" secondAttribute="height" multiplier="1:1" id="fat-9f-846"/>
                                     <constraint firstAttribute="height" constant="50" id="sBw-Yd-k8K"/>
@@ -178,13 +238,14 @@
                         <constraints>
                             <constraint firstItem="9H2-Qh-qP3" firstAttribute="top" secondItem="Kcl-7e-1bO" secondAttribute="bottom" constant="10" id="1cB-yL-YTO"/>
                             <constraint firstItem="UVp-SH-kSX" firstAttribute="top" secondItem="9H2-Qh-qP3" secondAttribute="bottom" constant="20" id="8Hp-uX-rE7"/>
+                            <constraint firstItem="DNm-Vl-CaW" firstAttribute="width" relation="greaterThanOrEqual" secondItem="QWk-F0-ObP" secondAttribute="width" constant="40" id="FIf-z6-Jlt"/>
                             <constraint firstItem="9H2-Qh-qP3" firstAttribute="trailing" secondItem="Kcl-7e-1bO" secondAttribute="trailing" id="Fho-3a-vFH"/>
                             <constraint firstItem="DNm-Vl-CaW" firstAttribute="trailing" secondItem="AN5-Qe-fJV" secondAttribute="trailing" id="JkE-QS-h0z"/>
                             <constraint firstItem="Kcl-7e-1bO" firstAttribute="top" secondItem="AN5-Qe-fJV" secondAttribute="bottom" constant="20" id="Jtr-G4-EVQ"/>
-                            <constraint firstItem="DNm-Vl-CaW" firstAttribute="top" secondItem="pKg-Ww-KPs" secondAttribute="bottom" constant="20" id="NCT-xN-vZp"/>
+                            <constraint firstItem="DNm-Vl-CaW" firstAttribute="top" secondItem="pKg-Ww-KPs" secondAttribute="bottom" constant="20" id="NMg-hj-yyt"/>
                             <constraint firstItem="9H2-Qh-qP3" firstAttribute="leading" secondItem="Kcl-7e-1bO" secondAttribute="leading" id="NVL-8K-nru"/>
                             <constraint firstItem="pKg-Ww-KPs" firstAttribute="centerX" secondItem="DNm-Vl-CaW" secondAttribute="centerX" id="PNS-ZO-3a5"/>
-                            <constraint firstItem="DNm-Vl-CaW" firstAttribute="width" secondItem="DNm-Vl-CaW" secondAttribute="height" multiplier="300:30" id="aDk-bb-G99"/>
+                            <constraint firstItem="DNm-Vl-CaW" firstAttribute="width" secondItem="DNm-Vl-CaW" secondAttribute="height" multiplier="250:50" id="aDk-bb-G99"/>
                             <constraint firstItem="AN5-Qe-fJV" firstAttribute="centerX" secondItem="xCX-5q-p6U" secondAttribute="centerX" id="cxA-UZ-6gd"/>
                             <constraint firstItem="Kcl-7e-1bO" firstAttribute="leading" secondItem="AN5-Qe-fJV" secondAttribute="leading" id="hiA-6a-Uk8"/>
                             <constraint firstItem="QWk-F0-ObP" firstAttribute="centerX" secondItem="pKg-Ww-KPs" secondAttribute="centerX" id="jfK-gN-zmc"/>
@@ -209,7 +270,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="email" destination="DNm-Vl-CaW" id="Fgd-Fv-c58"/>
+                        <outlet property="email" destination="DNm-Vl-CaW" id="fcz-kF-WtW"/>
                         <outlet property="lblPasswordError" destination="9H2-Qh-qP3" id="SE9-83-qJk"/>
                         <outlet property="password" destination="AN5-Qe-fJV" id="48C-Le-LfE"/>
                         <outlet property="rePassword" destination="Kcl-7e-1bO" id="6hI-kB-NIr"/>

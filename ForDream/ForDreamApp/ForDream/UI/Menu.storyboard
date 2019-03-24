@@ -9,11 +9,6 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="fa-regular-400.ttf">
-            <string>FontAwesome5Free-Regular</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--특별함-->
         <scene sceneID="fDG-Wa-yKb">
@@ -24,25 +19,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="92" id="cHG-QX-64g">
-                                <rect key="frame" x="0.0" y="28" width="414" height="92"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="cHG-QX-64g">
+                                <rect key="frame" x="0.0" y="28" width="414" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cHG-QX-64g" id="xWt-KY-t3u">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="91.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="59.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znj-NE-ZU0">
-                                            <rect key="frame" x="20" y="30" width="32" height="32"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" secondItem="znj-NE-ZU0" secondAttribute="height" multiplier="1:1" id="tMb-2e-ZhK"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="FontAwesome5Free-Regular" family="Font Awesome 5 Free" pointSize="17"/>
-                                            <state key="normal" title="S">
-                                                <color key="titleColor" red="0.6331112981" green="0.97864800689999998" blue="0.30174076560000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            </state>
-                                        </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4l-9f-ev7">
-                                            <rect key="frame" x="72" y="0.0" width="342" height="91.5"/>
+                                            <rect key="frame" x="133.5" y="6" width="147" height="48"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                             <state key="normal" title="WritedDate">
                                                 <color key="titleColor" red="0.6331112981" green="0.97864800689999998" blue="0.30174076560000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -50,12 +35,8 @@
                                         </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="c4l-9f-ev7" secondAttribute="trailing" id="1yS-pF-ymd"/>
-                                        <constraint firstItem="znj-NE-ZU0" firstAttribute="centerY" secondItem="xWt-KY-t3u" secondAttribute="centerY" id="8UO-59-dch"/>
-                                        <constraint firstAttribute="bottom" secondItem="c4l-9f-ev7" secondAttribute="bottom" id="PaZ-Br-wuk"/>
-                                        <constraint firstItem="znj-NE-ZU0" firstAttribute="leading" secondItem="xWt-KY-t3u" secondAttribute="leading" constant="20" id="nxu-3T-FyZ"/>
-                                        <constraint firstItem="c4l-9f-ev7" firstAttribute="leading" secondItem="znj-NE-ZU0" secondAttribute="trailing" constant="20" id="tdx-GY-OJs"/>
-                                        <constraint firstItem="c4l-9f-ev7" firstAttribute="top" secondItem="xWt-KY-t3u" secondAttribute="top" id="xhv-cs-Csm"/>
+                                        <constraint firstItem="c4l-9f-ev7" firstAttribute="centerY" secondItem="xWt-KY-t3u" secondAttribute="centerY" id="98R-eP-OXy"/>
+                                        <constraint firstItem="c4l-9f-ev7" firstAttribute="centerX" secondItem="xWt-KY-t3u" secondAttribute="centerX" id="IJc-wK-P3C"/>
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -66,7 +47,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="특별함" id="XBt-c0-7Aw">
-                        <barButtonItem key="leftBarButtonItem" title="Back" style="plain" id="HCH-tE-qji"/>
+                        <barButtonItem key="leftBarButtonItem" title="Back" style="plain" id="HCH-tE-qji">
+                            <color key="tintColor" red="0.63137254899999995" green="0.98039215690000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S9S-Bn-8n7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -76,7 +59,6 @@
         <!--Navigation Controller-->
         <scene sceneID="zuq-cz-mIb">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ajr-9p-Ucs" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="FcM-Hd-jr0" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GLF-eq-bsU">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -86,6 +68,7 @@
                         <segue destination="KZf-lE-VmI" kind="relationship" relationship="rootViewController" id="WMH-kK-tcB"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ajr-9p-Ucs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-905" y="-555"/>
         </scene>
@@ -116,6 +99,7 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.63137254899999995" green="0.98039215690000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="TQt-rN-F9k" firstAttribute="top" secondItem="2qJ-vk-rNN" secondAttribute="top" constant="10" id="39B-Dd-DDb"/>
                                     <constraint firstAttribute="trailing" secondItem="TQt-rN-F9k" secondAttribute="trailing" constant="10" id="H4g-C2-g8x"/>
@@ -129,13 +113,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D0a-ej-xYF">
                                 <rect key="frame" x="0.0" y="523" width="414" height="48"/>
                                 <subviews>
-                                    <segmentedControl opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="8wn-13-6hn">
-                                        <rect key="frame" x="90" y="10" width="314" height="29"/>
+                                    <segmentedControl opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="8wn-13-6hn">
+                                        <rect key="frame" x="91" y="10" width="314" height="29"/>
                                         <segments>
                                             <segment title="검정"/>
                                             <segment title="하양"/>
                                             <segment title="연두"/>
                                         </segments>
+                                        <color key="tintColor" red="0.63137254899999995" green="0.98039215690000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="글자색상" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9a4-Ts-noA">
                                         <rect key="frame" x="10" y="12" width="70" height="24"/>
@@ -164,6 +149,7 @@
                                             <segment title="최신글 부터"/>
                                             <segment title="오래된 글 부터"/>
                                         </segments>
+                                        <color key="tintColor" red="0.63137254899999995" green="0.98039215690000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="정렬" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gE-H7-MUB">
                                         <rect key="frame" x="10" y="12" width="35" height="24"/>
@@ -229,7 +215,9 @@
                         <viewLayoutGuide key="safeArea" id="iD2-BO-KsY"/>
                     </view>
                     <navigationItem key="navigationItem" title="환경설정" id="IU5-qF-Muo">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="LdT-2J-rPj"/>
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="LdT-2J-rPj">
+                            <color key="tintColor" red="0.63137254899999995" green="0.98039215690000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iVP-xN-Ts7" userLabel="First Responder" sceneMemberID="firstResponder"/>
